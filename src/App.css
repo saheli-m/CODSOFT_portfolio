@@ -1,38 +1,220 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #e9edc9;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  padding: 72px 10px 15px 10px;
   min-height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1653038337841-3945ada02f59?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+/* HEADER STYLE */
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0; 
+  width: 100%;
+  background-color: #001a2c;
+  z-index: 10;
+  padding: 20px 5px ;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* FOOTER STYLE */
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  background-color: #001a2c;
+}
+
+.foot1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#connectP {
+  margin-bottom: 0;
+}
+
+.foot-icon {
+  margin-left: 2rem;
+}
+
+.foot-icon a {
+  padding-right: 2rem;
+  font-size: large;
+  color: whitesmoke;
+}
+
+/* HOME STYLE */
+
+#home {
+  text-align: center;
+  padding-top: 50px;
+}
+
+#home .hero-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#home .container{
+  max-width: 1200px;
+  margin: auto;
+}
+
+#home .container p {
+  max-width: 800px;
+  margin: auto;
+}
+
+#home .container a {
+  color: #07578d;
+  text-decoration-line: none;
+}
+
+#home .container a:hover {
+  color: #07578d;
+  text-decoration-line: underline;
+}
+
+#home .profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* ABOUT STYLE */
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-container h4 {
+  text-decoration: 1px underline;
+  text-underline-offset: 3px;
+}
+
+#skill {
+  margin-bottom: 20px;
+  padding: 5px;
+  border: 1px solid #575757;
+  border-radius: 5px;
+  background-color: #033d63;
+} 
+
+.skill-ops {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 300px;
+}
+
+.skill-op {
+  width: 17.5rem;
+  padding-top: 0.5rem;
+}
+
+/* PROJECTS STYLE */
+
+#projects .cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#projects h2 {
+  width: 150px;
+  margin: auto;
+  padding: 5px 0;
+  text-align: center;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pro {
+  width: 37rem;
+  margin: 1rem;
 }
+
+.pro .card-header {
+  color: #fcfbfa;
+  background-color: #3c6e71;
+}
+
+.pro .img {
+  width: 100%;
+  height: 100%;
+}
+
+.pro .card-body {
+  background-color: #eff6e0;
+}
+
+.pro p {
+  text-align: start;
+}
+
+/* CONTACT STYLE */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact {
+  margin-top: 50px;
+}
+
+.contact .card-header {
+  background-color: #095588;
+}
+
+form label, form input, form textarea {
+  margin: 5px 0;
+}
+
+
+
+
+
+
